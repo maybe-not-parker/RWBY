@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.context{
+    background-image: url(context_background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.Ost{
+    background-image: url(ost_bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.profile{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(background_3.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    
+
+}
+.Fight{
+    background-image: url(black_background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.What{
+    background-image: url(outro_bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    color: #D3D3D3;
+}
+.navigation{
+    width: 85%;
+    margin: auto;
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    
+}
+
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navigation ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #EF6D3D;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+
+
+.navigation ul li:hover::after{
+    width: 100%;
+    
+}
+.nav_bar{
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to left, #333, #333);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 50px;
+}
+
+.content p{
+    margin-bottom: 50px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
+.banner a{
+    width: 200px;
+    padding: 15px 30px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: 0.5px solid #EF6D3D;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+    
+}
+
+
+.content a span{
+    background: #EF6D3D;
+    height: 100%;
+    width: 0;
+    border-radius: 7px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transition: 0.75s;
+}
+
+
+.content a:hover span{
+    width: 100%;
+    
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.profile h1{
+    background-color: #ff8177;
+    background: linear-gradient(90deg, #b80000, #cae9fe, #131313, #dcd030);
+    background-size: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
+
+.profile_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+}
+
+
+.profile_card{
+    margin: 0.5rem;
+    height: 665px;
+    width: 319px;
+    border-radius: 4px;
+    background-image: url(Ruby.jpg);
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    transition: 0.35s ease-in-out;
+}
+
+.profile_card:nth-child(2){
+    background-image: url('Weiss.jpg');
+} 
+.profile_card:nth-child(3){
+    background-image: url('Blake.jpg');
+} 
+.profile_card:nth-child(4){
+    background-image: url('Yang.jpg');
+} 
+
+.profile_card:hover{
+    background-image: url(Ruby_color.jpg);
+    transform: scale(1.075);
+    
+    cursor: pointer;
+    
+}
+.profile_card:nth-child(2):hover{
+    background-image: url(Weiss_color.jpg);
+    
+}
+
+.profile_card:nth-child(3):hover{
+    background-image: url(Blake_color.jpg);
+}
+.profile_card:nth-child(4):hover{
+    background-image: url(Yang_color.jpg);
+}
+
+
+.overlay {
+        
+      height: 0%;
+      width: 100%;
+      position: fixed; 
+      z-index: 1; 
+      left: 0;
+      top: 0;
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0, 0.9); 
+      overflow-y: hidden; 
+      transition: 0.325s; 
+}
+
+
+.overlay-content {
+      position: relative;
+      top: 10%; 
+      width: 100%;
+      text-align: center;
+      margin-top: 30px; 
+    
+}
+
+
+.overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block; 
+      transition: 0.3s; 
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+.overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+}
+
+
+.hide {
+  display:none;
+}
+.show {
+  display:block;
+}
+
+.context p{
+    text-align: center;
+    margin: 10px 50px;
+    font-weight: 100;
+    line-height: 45px;
+    font-size: 30px;
+    
+    
+}
+.context h1{
+    font-size: 70px;
+    margin-top: 50px;
+    
+}
+.context h2{
+    font-size: 30px;
+    
+}
+.context_def p{
+    text-align: center;
+    margin: 10px 25px;
+    font-weight: 100;
+    line-height: 45px;
+    font-size: 25px;
+    
+    
+}
+
+#Context{
+    scroll-margin-top: 90px;
+}
+#Characters{
+    scroll-margin-top: 90px;
+}
+#Ost{
+    scroll-margin-top: 90px;
+}
+#Fight_Scenes{
+    scroll-margin-top: 90px;
+}
+#So_What{
+    scroll-margin-top: 90px;
+}
+
+
+.fight_btn{
+    display: inline-block; 
+    margin-right: 20px;
+    margin-top: 10px
+}
+
+.fight_btn button{
+    background: #EF6D3D;
+    width: 150px;
+    height: 50px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.Fight p{
+    color: #fff;
+    margin: 50px auto;
+    text-align:center;
+}
+
+.audio_container{
+    margin-top: 50px;
+    background-image: url("music_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 475px;
+    border-radius: 15px;
+}
+
+
+.audio_control{
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.audio_text{
+    height: auto;
+    width: auto;
+    max-width: 1000px;
+    margin: 0px 50px 50px 100px;
+    font-size: 20px;
+    
+}
+.video_text{
+    height: auto;
+    width: auto;
+    max-width: 1400px;
+    margin: 0px 50px 50px 50px;
+    font-size: 20px;
+    
+}
+
+@media screen and (max-width: 1354px) {
+    .profile {height: auto;}
+    .profile {background-size: cover;}
+    .profile {background-repeat: no-repeat;}
+    .context {height:auto;}
+    .context {background-size:cover;}
+    
+}
+
+@media screen and (max-width:1600px){
+    .What {height:auto;}
+    .What {background-size:cover;}
+}
