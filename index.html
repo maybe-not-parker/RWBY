@@ -1,0 +1,169 @@
+<html>
+<head>
+    <title>RWBY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation bar-->
+    <div class="nav_bar">
+        <nav class="navigation">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#Context">Context</a></li>
+                <li><a href="#Characters">Characters</a></li>
+                <li><a href="#Ost">Ost</a></li>
+                <li><a href="#Fight_Scenes">Fight Scenes</a></li>
+                <li><a href="#So_What">So What?</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+    <!-- Landing Page-->
+    <div class="banner">
+        <div class="content">
+            <h1>A <span style='color:#b80000'>R</span><span style='color:#cae9fe'>W</span><span style="color:#131313">B</span><span style='color:#dcd030'>Y</span> in the Rough</h1>
+            <p>By: Parker Mack<br>(ehe.. See what I did there?)<br>Puns aside, don't watch this. It's not worth it.</p>
+            
+            <div>
+                <a href="#Context"><span></span>Enter the World of Remnant</a>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    
+    <div id="Context" class="context">
+        <h1>Context</h1>
+        <h2>Synopsis:</h2>
+        <p>The story takes place in the world of Remnant, which is filled with supernatural forces and shadowy creatures known as the Grimm. Prior to the events of the series, mankind waged a battle of survival against the Grimm before discovering the power of a mysterious element called Dust, which allowed them to fight back against the monsters. In the present day, Dust is used to power abilities and weapons. Those who use these abilities to battle the Grimm are known as Huntsmen and Huntresses. The series focuses on four girls, each with her own unique weapon and powers. Together, they form a team at Beacon Academy in the city of Vale, where they are trained to become Huntresses.</p>
+        <h2>Key Terms:</h2>
+        <div class = "context_def" style="line-height: 60px; margin-bottom: 75px;">
+            <p><strong>Remnant:</strong> It’s what the world is called.</p>
+
+            <p><strong>Dust: </strong>A source of energy in Remnant. The primary elements are Fire, Water, Earth, and Wind. <br>However, they can be combined to create more complex elements.</p>
+
+            <p><strong>Huntsmen/Huntress: </strong>Elite warriors dedicated to slaying the creatures of Grimm and upholding the peace.</p>
+
+            <p><strong>Grimm: </strong>Soulless creatures, also known as "creatures of destruction".</p>
+
+            <p><strong>Aura: </strong>A manifestation of one's life force. Can be used defensively or offensively. <br>Users only have a limited amount of aura, but it can be replenished through time.</p>
+
+            <p><strong>Semblance: </strong>A power unique to everyone once they’ve unlocked it.</p>
+
+            <p><strong>Faunus: </strong>People with animal characteristics.</p>
+        
+        </div>
+        
+    </div>
+    
+    
+    
+    <!-- Overlay -->
+    
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+            <img id="img" width="200" height="200" src="" style="border-radius: 15px;">
+            <p id="output" style="color:#fff; display: flex; justify-content:center; margin: 20px 50px 0 50px"></p>
+            <img id="weapon" src="" height="200">
+            <img id="semblance" src="" height="200">
+            
+      </div>
+
+    </div>
+    
+    <!-- Character Profiles -->
+    
+    <div id="Characters" class="profile">
+        <h1>Characters</h1>
+        <div class="profile_container">
+            <!------------------------------------------------------>
+            <span onclick="openNav(); Ruby()" class="profile_card">
+            </span>
+            <!------------------------------------------------------>
+            <span onclick="openNav(); Weiss()" class="profile_card">
+            </span>
+            <!------------------------------------------------------>
+            <span onclick="openNav(); Blake()" class="profile_card">
+            </span>
+            <!------------------------------------------------------>
+            <span onclick="openNav(); Yang()" class="profile_card">
+            </span>
+        
+        </div>
+    
+    </div>
+    
+    <div id="Ost" class="Ost">
+        <h1 style="margin-top: 40px; color: #fff"><img src="dance.gif" height="50">RWBYs Original Soundtrack<img src="dance.gif" height="50"></h1>
+        <audio id="music_player">
+            <source src="red_like_roses_2.mp3">
+        </audio>
+        <div class = "audio_container">
+                <img id = "audio_cover" src="vol_1.jpg" width='300px' height='300px' style="margin-left: 50px; border-radius: 10px">
+                <p style="text-align: center;" id="test">1/5</p>
+                <p id="display_song" style="text-align: center;">Red Like Roses II</p>
+            
+            <div id = "aud_ctl" class="audio_control">
+                <button onclick="back()" style="font-size: 40px; width: 45px; height: 45px; cursor: pointer;"><i class="fa fa-fast-backward"></i></button>
+                <button id="play_pause" onclick="play_pause()" style="font-size: 40px; width: 45px; height: 45px; cursor: pointer;"><i class="fa fa-play"></i></button>
+                <button onclick="next()" style="font-size: 40px; width: 45px; height: 45px; cursor: pointer;"><i class="fa fa-fast-forward"></i></button>
+                <button id="mute" onclick="mute()" style="font-size: 40px; width: 45px; height: 45px; cursor: pointer;"><i class="fa fa-volume-up"></i></button>
+                
+            </div>
+            
+        </div>
+        <div class = "audio_text">
+            <p style="color: #fff; margin: 50px 50px 0px 50px; text-align:center; font-size: 20px">
+                Thanks to Jeff Williams and his daughter Casey Lee Williams (who was only 13 when she was brought on to sing Volume 1 of RWBY), they have some pretty good music for RWBY. A lot of the songs are rock. However, they have produced a few pop songs and a couple of slow ballads. Most notably, "Cold" which was made in honour of the late Monty Oum. (The creator of RWBY)
+            </p>
+        </div>
+    </div>
+    
+    <div id="Fight_Scenes" class="Fight">
+        <h1 style="margin-top: 20px; color: #fff">RWBY's Fight Scenes</h1>
+        <div class = "fight_btn">
+            <button onclick="ruby_fight_red()">RWBY "Red" Trailer</button>
+            <button onclick="rwby_fight_grimm()">RWBY vs Nevermore</button>
+            <button onclick="rwby_fight_roman()">RWBY vs Roman</button>
+        </div>
+        
+        <video controls class="video_style" id="video_player" preload="auto" width="854px" height="480px" style="margin-top: 20px; border-radius: 25px;">
+            <source src="rwby_fight.mp4" type="video/mp4" >
+        </video>
+        <div class="video_text">
+            <p>
+                What's impressive about the fight animations is that, for a majority of the scenes, Monty Oum worked on them by himself. The reason why the choreography is so fluid is that Monty Oum was a pretty good dancer himself, which gave him a better understanding of momentum and fluidity of the characters movement.<a href="https://www.youtube.com/watch?v=Xs4R-6D09Zk" style="color: skyblue">Click me!</a> Additionally, most of the scenes flow in rhythm to the music. Furthermore, the music helps elevate the scenes to create really hype moments. For example, in the Rwby versus the Nevermore fight, when Nora was launched into the air, as she started to decelerate, the music stopped before it kicked back up as she was freefalling. Then when Ren passed out, the lyrics were, "I couldn't take it, I couldn't stand another minute." Finally, the music paused once more before she launched towards the Nevermore, then it picked back up as she's flying through the air with rose petals behind her and the lyrics saying "red like roses."
+            </p>
+        </div>
+        
+        
+        
+        
+    </div>
+    
+    <div id="So_What" class="What">
+        <h1 style="margin-top: 40px">If the show has a lot good aspects, why don't you recommend it?</h1>
+        <p style="line-height: 50px; font-size: 24px; text-align:center; margin: 50px 100px">
+            The biggest problem of RWBY is the writing. Initially, Monty Oam was concerned that having a story about four teenage girls written by three adult men may cause an issue. However, against his better judgment, he went through with the idea anyway. The fight scenes are where a lot of character development or visual storytelling happens (See <a href="https://www.youtube.com/watch?v=id0tja1Y6vY" style="color: skyblue">Pyrrha vs Mercury's</a> fight scene. In this scene, Mercury was trying to figure out what Pyrrha's semblance is. This is a good example of exposition because of how the visuals helped get that point across. After this, they went back to uninteresting exposition.) However, the events that transpired prior to and after falters due to Miles Luna and Kerry Shawcross' writing. While RWBY has a lot of good ideas, it falls into the execution of those ideas. For example, the tombstone in the “Red” trailer had no story significance, but Monty just thought it was cool. When Jeff Williams asked Monty about it, Monty replied, "I don't know. We just thought it would be cool if she visited a grave". Jeff went on to ask "What if it's her mom?" to which Monty answered, "That's cool". <a href="https://www.youtube.com/watch?v=0SF1HJlwiww#t=23m" style="color: skyblue">Source</a>
+            <br><br> My exact feelings about this show can be summarized by this quote: "Since the beginning of mankind, we have always been drawn to fire. Its mesmerizing flames, dancing, and weaving was what kept us alive and warm. Allowed us to cook food for more nutritional meals that helped us to develop our evolving brains. Which is why in the modern age, almost as if by instinct, we are still drawn to a dumpster fire, no matter how dangerous, or smelly or..." <a href="https://www.youtube.com/watch?v=n2OQu9yMh9k&t=24s" style="color: skyblue">-Gigguk</a> (P.S the source is rated pg-13)
+        </p>
+        
+    </div>
+<footer>
+    <p style="background-color: black; color: #D3D3D3">
+        Footer section. Nothing to see here.
+    </p>
+</footer>
+</body>
+</html>
